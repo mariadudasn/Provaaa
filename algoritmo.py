@@ -38,7 +38,6 @@ def main ():
                     print ("---LISTA DE TAREFAS---")
                     lista.listar_tarefas()
                     os.system ("pause")
-
                     indice = int(input("Qual tarefa deseja excluir? Digite o indice: \n >> "))
                     lista.excluir_tarefa(indice)
                     os.system ("pause")
@@ -58,8 +57,7 @@ def main ():
                     print("Valor inválido")
                     print ("-------")
 
-        except Exception as erro:
+        except Exception:
             print ("Valor inválido")
-            print (erro.__class__.__name__)
             print(" ")
             os.system("pause")

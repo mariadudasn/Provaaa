@@ -12,8 +12,7 @@ class ToDoList:
         for indice in self.tarefas.items():
             del self.tarefas[self.indice]
             print ("Tarefa excluída")
-
-            
+    
     def listar_tarefas(self):
         for chave,valor in self.tarefas.items():
             print (f"{chave} - Tarefa: {valor [0]}")
